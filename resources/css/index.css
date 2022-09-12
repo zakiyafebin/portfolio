@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    color: whitesmoke;
+    background-color: rgb(5, 15, 62);
+    border: 4px solid white;
+    
+}
+header{
+    width: 95%;
+    display: flex;    
+    
+    /* position: fixed;
+    z-index: 1000; */
+    margin: 1rem 2rem;
+    border-bottom: 1px solid whitesmoke;
+}
+.name{
+    font-family: 'Tangerine', serif ;
+
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 2rem;
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
+
+.icons ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.icons li{
+    list-style: none;
+    padding: 2.3rem;
+}
+.icons li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.icons i{
+    color: white;
+    font-size: 35px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 60px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.left{
+    width: 70%;
+    
+}
+.right{
+    width: 30%;
+    
+    
+}
+
+main{
+    width: 95%;
+    margin: 1rem 2rem;
+    
+    display: flex;
+    font-style: italic;
+}
+h1{
+    text-align: center;
+    padding: 1rem;
+}
+h2{
+    padding-bottom: 1rem;
+
+}
+main p{
+    font-size: 18px;
+}
+/* Box alignment */
+.boxesRight{
+    display: flex;
+    width: 100%;
+    /* border: 3px solid red; */
+    justify-content: flex-end;
+}
+.partition1{
+    border: 1px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #ebf1f2, 0 0 2px #eaf0f1,
+                0 0 4px #f3f6f7, 0 0 5px #f8fdfe;
+    
+    background-color: rgb(5, 15, 62);;
+    
+    border-radius: 10px;
+    width: 60%;
+    
+    padding: 30px;
+
+    margin: 2rem 3rem;
+
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.right{
+    background-color: white;
+    color: black;
+}
+.right h1{
+    color:  rgb(8, 28, 117);
+}
+
+.partition1:hover{
+    transform: scale(1.1);
+    transform-origin: 50% 50%;    
+}
+    
+.partition2{
+    border: 1px solid white;
+    box-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 4px #ebf1f2, 0 0 2px #eaf0f1,
+                0 0 4px #f3f6f7, 0 0 5px #f8fdfe;
+    border-radius: 10px;
+    width: 60%;
+    
+    padding: 30px;
+    margin: 2rem 3rem;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.partition2:hover{
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+    
+}
+/* ------------------------------------------------------------------- */
+.project{
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid rgb(8, 28, 117);
+}
+.project h2{
+    color: rgb(106, 106, 243);
+}
+.project a{
+    text-decoration: none;
+    color: rgb(106, 106, 243);
+}
+.project img{
+    max-width: 95%;
+}
+/* ------------------------------------------------------------------------- */
+footer{
+    width: 95%;
+    border-top: 1px solid whitesmoke;
+    margin: 1rem 2rem;
+}
+form{
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 45%;
+    margin: auto;
+    padding: 3rem;
+}
+label {
+    display: inline-block;
+    width: 135px;
+    
+  }
+  
+  form input, form textarea{
+    width: 70%;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    /* cursor: pointer; */
+    
+  }
+  
+  .formAlign{
+    display: flex;
+    padding: 1rem;
+  }
+  form button{
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+
+
+/* Media querie for responsive design */
+
+@media only screen and (max-width: 555px)   {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        
+        /* border: solid salmon; */
+    }
+    header{
+        width: 100%;
+        display: inline-block;
+        /* border: solid yellow; */
+        margin: 0;
+
+    }
+    .icons i{
+        font-size: 25px;
+    }
+    main{
+        display: inline-block;
+        width: 100%;
+        margin: 0rem;
+        /* border: solid red; */
+        
+
+    }
+    .partition1, .partition2{
+        display: inline-block;
+        /* margin: 1re,; */
+        margin: 1rem;
+        padding: .5rem;
+        width: 90%;
+    }
+    .left, .right{
+        box-sizing: border-box;
+        /* border: solid #0fa; */
+        width: 100%;
+        margin: 0;
+        
+    }
+    .boxesRight{
+        display: block;
+    }
+    h1{
+        font-size: 800;
+    }
+    footer{
+        margin: .5rem;
+    }
+    form{
+        width: 90%;
+        padding: 0;
+    }
+    form label{
+        width: 60px;
+    }
+    form input, form textarea{
+        width: 95%;
+    }
+
+
+}
